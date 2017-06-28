@@ -111,7 +111,7 @@ def get_songs(midi_path):
         f = midi_path + '/' + f
         try:
             song = numpy.array(midiToNoteStateMatrix(f))
-            print song.shape
+            # print song.shape
             if numpy.array(song).shape[0] > 64:
                 songs.append(song)
                 print('loaded:', f)
