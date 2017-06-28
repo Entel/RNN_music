@@ -177,7 +177,7 @@ def train_neural_network():
         
         saver = tf.train.Saver(tf.all_variables())
         
-        epochs = 2048 * 64
+        epochs = 2048 * 1024
         batch_size = 64
         for epoch in range(epochs):
             for song in songs:
